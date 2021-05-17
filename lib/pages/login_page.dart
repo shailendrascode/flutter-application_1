@@ -67,13 +67,15 @@ class _LoginPageState extends State<LoginPage> {
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
-                        fontSize: 20,
+                        fontSize: 18,
                       ),
                     ),
                   ),
                   decoration: BoxDecoration(
+                      shape:
+                          changeButton ? BoxShape.circle : BoxShape.rectangle,
                       color: Colors.deepOrange,
-                      borderRadius: BorderRadius.circular(changeButton ? 20 : 8)
+                      borderRadius: BorderRadius.circular(changeButton ? 50 : 8)
                       // backgroundBlendMode: BlendMode.colorDodge
                       ),
                 ),
